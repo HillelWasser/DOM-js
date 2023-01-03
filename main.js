@@ -77,68 +77,46 @@
 //   alert('good night!!');
 // });
 
-//Ex7
+
+
+
 // function MakeMyList() {
-//     const userText = document.createElement('input',Text);
-// const addBtn = document.createElement('button');
-// addBtn.setAttribute('id','addBtn');
-// const removeBtn = document.createElement('button');
-// removeBtn.setAttribute('id','removeBtn');
-// const theBigList = document.createElement('ul');
-// const theDiv = document.getElementsByTagName('div');
-// theDiv.appendChild(userText);
-// theDiv.appendChild(theBigList);
-// theDiv.appendChild(addBtn);
-// theDiv.appendChild(removeBtn);
-// addBtn.addEventListener('click',event => {
-//     event.preventDefault();
-//     const newToDo = document.createElement('li');
-//     newToDo.appendChild(userText.value);
-//     theBigList.appendChild(newToDo)
-// })
-// removeBtn.addEventListener('click',event1 => {
-//     event1.preventDefault();
-//     theBigList.removeChild(newToDo)
-// })
-// }
-// MakeMyList();
-
-
-function MakeMyList() {
-    const userText = document.createElement('input');
-    const addBtn = document.createElement('button');
-    addBtn.setAttribute('id','addBtn');
-    const removeBtn = document.createElement('button');
-    removeBtn.setAttribute('id','removeBtn');
-    const theBigList = document.createElement('ul');
-    const theDiv = document.getElementsByTagName('div')[0];
-    theDiv.appendChild(userText);
-    theDiv.appendChild(theBigList);
-    theDiv.appendChild(addBtn);
-    theDiv.appendChild(removeBtn);
-    addBtn.addEventListener('click', event => {
-      event.preventDefault();
-      const newToDo = document.createElement('li');
-      const text = document.createTextNode(userText.value);
-      newToDo.appendChild(text);
-      theBigList.appendChild(newToDo);
-      newToDo.addEventListener('click', event3 => {
-        event3.preventDefault();
-        newToDo.style.backgroundColor = 'pink';
-      });
-    });
-    removeBtn.addEventListener('click', event1 => {
-      event1.preventDefault();
-      theBigList.removeChild();
-    });
-    addBtn.style.backgroundColor = 'green';
-    removeBtn.style.backgroundColor = 'red';
-    addBtn.style.height = 20;
-    addBtn.style.width = 70;
-    removeBtn.style.width = 70;
-    removeBtn.style.height = 20;
-    addBtn.innerText = 'add'
-    removeBtn.innerText = 'remove'
-  }
+//     const userText = document.createElement('input');
+//     const addBtn = document.createElement('button');
+//     addBtn.setAttribute('id','addBtn');
+//     const removeBtn = document.createElement('button');
+//     removeBtn.setAttribute('id','removeBtn');
+//     const theBigList = document.createElement('ul');
+//     const theDiv = document.getElementsByTagName('div')[0];
+//     theDiv.appendChild(userText);
+//     theDiv.appendChild(theBigList);
+//     theDiv.appendChild(addBtn);
+//     theDiv.appendChild(removeBtn);
+//     addBtn.addEventListener('click', event => {
+//       event.preventDefault();
+//       const newToDo = document.createElement('li');
+//       const text = document.createTextNode(userText.value);
+//       newToDo.appendChild(text);
+//       const checkbox = document.createElement('input');
+//     checkbox.setAttribute('type', 'checkbox');
+//       theBigList.appendChild(newToDo);
+//       newToDo.appendChild(checkbox);
+      
+//     });
+//     removeBtn.addEventListener('click', event1 => {
+//       event1.preventDefault();
+//       const lastChild = theBigList.lastChild;
+//       theBigList.removeChild(lastChild);
+//     });
+//     addBtn.style.backgroundColor = 'green';
+//     removeBtn.style.backgroundColor = 'red';
+//     addBtn.style.height = 20;
+//     addBtn.style.width = 70;
+//     removeBtn.style.width = 70;
+//     removeBtn.style.height = 20;
+//     addBtn.innerText = 'add'
+//     removeBtn.innerText = 'remove'
+//     theBigList.style.checkbox;
+//   }
   
-  MakeMyList();
+// MakeMyList()
